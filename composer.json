@@ -1,0 +1,19 @@
+{
+    "name": "sitec/cfdi",
+    "description": "SDK para PHP del sistema de generacion de CFDI de SiTEC",
+    "type": "project",
+    "authors": [
+        {
+            "name": "SiTEC",
+            "email": "contacto@sistemasespecializados.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Mpsoft\\CFDI\\": "src/"
+        }
+    },
+    "require": {
+    }
+}
