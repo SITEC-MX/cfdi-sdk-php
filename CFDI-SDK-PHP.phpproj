@@ -22,5 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src" />
+    <Folder Include="src\xslt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\xslt\cadenaoriginal_TFD_1_1.xslt" />
   </ItemGroup>
 </Project>

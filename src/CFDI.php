@@ -80,4 +80,17 @@ class CFDI
 
         return $this->APICALL("cancelar", $parametros);
     }
+
+    public function GenerarCadenaOriginal($TimbreFiscalDigital_str)
+    {
+        $TimbreFiscalDigital = simplexml_load_string($TimbreFiscalDigital_str);
+
+        $xsl = new \DOMDocument();
+        $xsl->load(__DIR__ . "/xslt/cadenaoriginal_TFD_1_1.xslt");
+
+        $proc = new \XSLTProcessor();
+        $proc->importStyleSheet($xsl);
+
+        return $proc->transformToXML($TimbreFiscalDigital);
+    }
 }
