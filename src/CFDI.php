@@ -70,12 +70,13 @@ class CFDI
         return $this->APICALL("emitir", $cfdi);
     }
 
-    public function Cancelar($rfc, $uuid)
+    public function Cancelar(string $rfc, string $uuid, string $motivocancelacion)
     {
         $parametros = array
             (
                 "rfc" => $rfc,
                 "uuid" => $uuid,
+                "motivocancelacion" => $motivocancelacion
             );
 
         return $this->APICALL("cancelar", $parametros);
