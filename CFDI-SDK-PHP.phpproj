@@ -7,6 +7,15 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.4</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>false</PHPDevAutoPort>
+    <PHPDevPort>80</PHPDevPort>
+    <PHPDevRouting>
+    </PHPDevRouting>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -15,16 +24,20 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include=".herramientas\generar_cfdi.php" />
+    <Compile Include=".herramientas\openapi.php" />
     <Compile Include="composer.json" />
     <Compile Include="LICENSE" />
     <Compile Include="README.md" />
     <Compile Include="src\CFDI.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".herramientas\" />
     <Folder Include="src" />
     <Folder Include="src\xslt\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".herramientas\plantilla_cfdi.txt" />
     <Content Include="src\xslt\cadenaoriginal_TFD_1_1.xslt" />
   </ItemGroup>
 </Project>

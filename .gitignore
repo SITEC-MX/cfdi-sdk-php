@@ -1,2 +1,5 @@
-
 .vs/
+vendor/
+
+CFDI-SDK-PHP.phpproj.user
+composer.lock
