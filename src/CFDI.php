@@ -160,8 +160,11 @@ class CFDI
 
 
 	public function POST_EstadoSAT(?array $variables=NULL,?array $querystrings=NULL,?array $body=NULL){ $url = "estadoSAT"; return $this->API_CALL("POST", $url, $variables, $querystrings, $body); }
+	public function POST_DescargaMasivaSAT(?array $variables=NULL,?array $querystrings=NULL,?array $body=NULL){ $url = "descargaMasivaSAT"; return $this->API_CALL("POST", $url, $variables, $querystrings, $body); }
+	public function GET_DescargaMasivaSAT(?array $variables=NULL,?array $querystrings=NULL){ $url = "descargaMasivaSAT/<id>"; return $this->API_CALL("GET", $url, $variables, $querystrings, NULL); }
 	public function POST_Emitir(?array $variables=NULL,?array $querystrings=NULL,?array $body=NULL){ $url = "emitir"; return $this->API_CALL("POST", $url, $variables, $querystrings, $body); }
 	public function POST_Cancelar(?array $variables=NULL,?array $querystrings=NULL,?array $body=NULL){ $url = "cancelar"; return $this->API_CALL("POST", $url, $variables, $querystrings, $body); }
+	public function POST_GenerarPDF(?array $variables=NULL,?array $querystrings=NULL,?array $body=NULL){ $url = "generarPDF"; return $this->API_CALL("POST", $url, $variables, $querystrings, $body); }
 	public function GET_Raiz(?array $variables=NULL,?array $querystrings=NULL){ $url = "<uuid>"; return $this->API_CALL("GET", $url, $variables, $querystrings, NULL); }
 
 }
