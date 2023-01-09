@@ -16,7 +16,7 @@ class CFDI
     private $rfc = NULL;
     private $token = NULL;
 
-    private $host = "cfdi.svc-sitec.com";
+    private $host = "cfdi.sitec-mx.com";
 
     private $guzzle = NULL;
     private $openapi = NULL;
